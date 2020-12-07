@@ -19,7 +19,7 @@ jobs:
         run: |
           set -euo pipefail
           touch .env
-          ./build-version.sh cargo-quickinstall
+          ./build-version.sh cross
       - name: Install Thyself
         run: cargo install --path cargo-quickinstall
       - name: Install Thyself with Thyself
